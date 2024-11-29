@@ -1,6 +1,6 @@
 export const API_URL = import.meta.env.DEV
   ? "http://localhost:8787/api"
-  : new URL(import.meta.url).origin + "/api";
+  : "https://api.benjaminrivas500.workers.dev";
 
 console.log(API_URL);
 
