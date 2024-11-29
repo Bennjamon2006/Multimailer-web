@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Collonse;
+  src: url(/assets/Collonse.ttf);
+}
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 50px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .title {
+      text-decoration: none;
+      font-size: 2em;
+      display: flex;
+      margin-left: 0.5em;
+      align-items: center;
+      vertical-align: middle;
+      height: 100%;
+      font-family: Collonse;
+
+      a {
+        color: #000;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: #777;
+        }
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      padding: 0 0.5em;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+          margin-right: 1em;
+          font-size: 1.25em;
+
+          a {
+            color: #000;
+            transition: color 0.3s ease-in-out;
+            &:hover {
+              color: #777;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+
+  > main {
+    width: 100%;
+    flex: 1;
+    max-height: calc(100% - 100px);
+  }
+}

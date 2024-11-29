@@ -1,0 +1,93 @@
+.contact {
+  width: 100%;
+  max-height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  &:hover {
+    background-color: #ddd;
+  }
+
+  .state {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    margin-left: 1em;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border: 1px solid #333;
+    }
+
+    input:checked + .checkmark {
+      background-color: #646cff;
+    }
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    .checkmark:after {
+      left: 8px;
+      top: 4px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+  .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 30x;
+      height: 30px;
+      border-radius: 50%;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 0.5em;
+
+    h2 {
+      font-size: 1.25em;
+    }
+
+    p {
+      font-size: 1em;
+      color: #666;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.join {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1em;
+  }
+}

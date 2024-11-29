@@ -1,0 +1,32 @@
+.home {
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #333;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: #666;
+  }
+}
+
+.description {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+.info {
+  font-size: 1em;
+  color: #666;
+}
