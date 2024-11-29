@@ -1,6 +1,6 @@
 export const API_URL = import.meta.env.DEV
   ? "http://localhost:8787/api"
-  : "https://api.benjaminrivas500.workers.dev";
+  : "api-multimailer.benjaminrivas500.workers.dev";
 
 console.log(API_URL);
 
